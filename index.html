@@ -3,47 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boxes</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container{
-            display: grid;
-            grid-template-columns: repeat(2, 100px);
-            grid-template-rows: repeat(2, 100px);
-            gap: 10px;
-        }
-        .box{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-weight: bold;
-        }
-        .box1{ 
-            background-color: red; 
-        }
-        .box2{ 
-            background-color: greenyellow; 
-        }
-        .box3{ 
-            background-color: blue;
-        }
-        .box4{ 
-            background-color: yellow; 
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Newsletter</title>
 </head>
 <body>
-    <div class="container">
-        <div class="box box1">Box 1</div>
-        <div class="box box2">Box 2</div>
-        <div class="box box3">Box 3</div>
-        <div class="box box4">Box 4</div>
-    </div>
+
+    <nav class="navbar-container">
+        <div class="home">
+            <ul>
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Blogs</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+        </div>
+        <div class="nav-buttons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="subscribe">Subscribe</button>
+        </div>
+    </nav>
+
+    <section id="article-section">
+        <div class="article-container">
+            <div class="featured-article">
+                <img src="./image-5.png"  alt="Building">
+                <div class="article-details">
+                    Lifestyle
+                    <h2>Begin here to obtain a brief summary encompassing all the essential</h2>
+                    <p>This comprehensive post serves as your cheat-sheet...</p>
+                    <p>By Adrio Devid • Sep 10, 2025</p>
+                </div>
+            </div>
+    
+            <div class="articles-grid">
+                <div class="article-card">
+                    <img src="./image-4.png" alt="VR" >
+                    <div class="article-info">
+                        Technology
+                        <h3>14 Innovative Architectural Designs to Create a Vast Interior Space</h3>
+                        <p>By Adrio Devid • Sep 10, 2025</p>
+                    </div>
+                </div>
+                <div class="article-card">
+                    <img src="./hero-01.png" alt="Nature">
+                    <div class="article-info">
+                        Travel
+                        <h3>Traveller Visiting Ice Cave With Amazing Eye-catching view with nature</h3>
+                        <p>By Adrio Devid • Sep 10, 2025</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    </section>
+
+    <section id="category-section">
+        <div class="category-container">
+            <div class="category-header">
+                <h2>Browse by Category</h2>
+                <p>Select a category to see more related content</p>
+                <div class="category-buttons">
+                    <ul>
+                        <li> All (20)</li>
+                        <li> Technology (03)</li>
+                        <li> Lifestyle (02)</li>
+                        <li> Travel (05)</li>
+                        <li> Health (09)</li>
+                        <li> Culture (01)</li>
+                    </ul>    
+                </div>
+            </div>
+            
+            
+            <div class="grid">
+                <div class="card-2">
+                    <img src="./image-1.png" alt="Building">
+                    <div class="card-2-info">
+                        <h3>Stylish Kitchen And Dining Room With Functional Ideas</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <img src="./image-2.png" alt="Computer">
+                    <div class="card-2-info">
+                        <h3>Stylish Kitchen And Dining Room With Functional Ideas</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <img src="./image-3.png" alt="Person">
+                    <div class="card-2-info">
+                        <h3>Stylish Kitchen And Dining Room With Functional Ideas</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <img src="./image-4.png" alt="stairs">
+                    <div class="card-2-info">
+                        <h3>Stylish Kitchen And Dining Room With Functional Ideas</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>    
+                </div>
+                <div class="card-2">
+                    <img src="./image-5.png" alt="person">
+                    <div class="card-2-info">
+                        <h3>Traveller Visiting Ice Cave With Amazing Eye-catching view with nature</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>
+                </div>
+                <div class="card-2">
+                    <img src="./hero-01.png" alt="nature">
+                    <div class="card-2-info">
+                        <h3>Stylish Kitchen And Dining Room With Functional Ideas</h3>
+                        <p>Lorem Ipsum is simply dummy text of the print and typesetting industry.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="browse-all-button">Browse all Posts</button>
+        </div>
+        
+    </section>
+
+    <section id="authors-section">
+        <div class="authors-container">
+            <div class="authors-header">
+                <h2>Top Authors</h2>
+                <div class="header-button">
+                    <h3>All Authors </h3>
+                </div>
+            </div>
+            <div class="authors-content">
+                <div class="content">
+                    <h4>Adrio Devid</h4>
+                    <p>Director of Operations</p>
+                    <div class="publish">
+                        <h4>03 Pulished posts</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./user-02.png" alt="User">
+                    <h4>Rayna Kenter</h4>
+                    <p>Content writer</p>
+                    <div class="publish">
+                        <h4>05 Pulished posts</h4>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="./user-03.png" alt="User">
+                    <h4>Talan Philips</h4>
+                    <p>Director of Operations</p>
+                    <div class="publish">
+                        <h4>10 Pulished posts</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-container">
+            <div class="subscribe-content">
+                <h2>Subscribe to Newsletter</h2>
+                <p>Provide your email to get email notification when we launch new products or publish new articles</p>
+                <input type="text" placeholder="Enter your Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer class="footer-container">
+        <p>&copy;2025 Clarity. All rights reserved 
+        </p>
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+            <li>Contribute</li>
+        </ul>
+        <div class="social">
+            <h4>Follow Us:</h4>
+            <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <button class="subscribe">Subscribe</button>
+        </div>
+    </footer>
+
 </body>
 </html>
